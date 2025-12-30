@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import { useState, FormEvent, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from "react";
+import type { FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";

@@ -4,9 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface HeroSectionProps {
-  heroRef: React.RefObject<HTMLDivElement>;
-  parallaxY: any;
-  parallaxOpacity: any;
+  heroRef: React.RefObject<HTMLDivElement | null>;
 }
 
 export function HeroSection({ heroRef }: HeroSectionProps) {
