@@ -8,6 +8,7 @@ export interface PortfolioItem {
 }
 
 export const portfolioData: PortfolioItem[] = [
+  
   {
     id: 1,
     client: "VD Prasad Memorial High School",
@@ -17,6 +18,7 @@ export const portfolioData: PortfolioItem[] = [
       "Educational institution website designed to provide school information, admissions, and updates with a clean and responsive UI.",
     link: "https://www.vdprasadaraomemorialhighschool.in/",
   },
+  
   {
     id: 2,
     client: "Studio Circle",
@@ -25,6 +27,7 @@ export const portfolioData: PortfolioItem[] = [
     description:
       "A full-fledged e-commerce platform enabling online product browsing, ordering, and secure checkout.",
     link: "https://thestudiocircle.com/",
+    
   },
   {
     id: 3,

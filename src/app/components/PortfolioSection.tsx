@@ -51,13 +51,30 @@ export function PortfolioSection() {
   
 
   const categories = ["All", "Web", "E-Commerce", "UI/UX", "Enterprise"];
-
+  
   const filteredData =
-    active === "All"
-      ? portfolioData
-      : portfolioData.filter(
-          (item: PortfolioItem) => item.category === active
-        );
+  active === "All"
+    ? portfolioData
+    : portfolioData.filter((item: PortfolioItem) => {
+        if (active === "Web") {
+          return item.client === "VD Prasad Memorial High School";
+        }
+
+        if (active === "E-Commerce") {
+          return item.client === "Studio Circle";
+        }
+
+        if (active === "Enterprise") {
+          return item.client === "Aultra Paints";
+        }
+
+        if (active === "UI/UX") {
+          return item.client === "Hyderabad Urology & Andrology";
+        }
+
+        return false;
+      });
+
     
  useLayoutEffect(() => {
      window.scrollTo({ top: 0, behavior: "auto" });
