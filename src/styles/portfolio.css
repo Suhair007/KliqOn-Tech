@@ -386,6 +386,55 @@
   transition: all 0.4s ease;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .portfolio-card {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .card-image img {
+    height: 180px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .portfolio-card {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .card-image {
+    margin-bottom: 14px;
+  }
+
+  .card-image img {
+    height: 160px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin: 12px 0 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .portfolio-card {
+    padding: 14px;
+  }
+
+  .portfolio-card h3 {
+    font-size: 20px;
+  }
+
+  .services span {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
 /* Glow background */
 .portfolio-card::after {
   content: "";
