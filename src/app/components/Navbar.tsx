@@ -74,7 +74,7 @@ export function Navbar() {
                 if (item === "Products") return "/products";
                 if (item === "Career") return "/career";
                 if (item === "Services") return "#services";
-                if (item === "About Us") return "#about-us";
+                if (item === "About Us") return "/about-us";
                 if (item === "Portfolio") return "/portfolio";
                 return `#${item.toLowerCase().replace(" ", "-")}`;
               };
@@ -141,7 +141,7 @@ export function Navbar() {
                   if (item === "Products") return "/products";
                   if (item === "Career") return "/career";
                   if (item === "Services") return "#services";
-                  if (item === "About Us") return "#about-us";
+                  if (item === "About Us") return "/about-us";
                   if (item === "Portfolio") return "/portfolio";
                   return `#${item.toLowerCase().replace(" ", "-")}`;
                 };

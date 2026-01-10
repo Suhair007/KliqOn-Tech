@@ -3,8 +3,8 @@ import { Navbar } from "../components/Navbar";
 import { HeroSection } from "../components/HeroSection";
 import { ServicesSection } from "../components/ServicesSection";
 import { TechStackSection } from "../components/TechStackSection";
-import { MissionSection } from "../components/MissionSection";
-import { AboutSection } from "../components/AboutSection";
+
+
 import { ClientsSection } from "../components/ClientsSection";
 import { CTASection } from "../components/CTASection";
 import { Footer } from "../components/Footer";
@@ -18,8 +18,6 @@ export function HomePage() {
       <HeroSection heroRef={heroRef}/>
       <ServicesSection />
       <TechStackSection />
-      <AboutSection />
-      <MissionSection />
       <ClientsSection />
       <CTASection />
       <Footer />
