@@ -36,7 +36,7 @@ export function ProductsPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-[#B7B8BC] text-lg md:text-xl max-w-2xl mx-auto mb-12"
+            className="text-[#F3F3F3] text-lg md:text-xl max-w-2xl mx-auto mb-12"
           >
             We're crafting innovative solutions that will transform the way you work.
           </motion.p>
@@ -109,7 +109,7 @@ export function ProductsPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
-              className="text-[#B7B8BC] text-base md:text-lg mb-8 max-w-xl mx-auto relative z-10"
+              className="text-[#F3F3F3] text-base md:text-lg mb-8 max-w-xl mx-auto relative z-10"
             >
               We're working hard to bring you innovative products that will revolutionize your workflow. Stay tuned for exciting updates!
             </motion.p>

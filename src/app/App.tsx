@@ -4,6 +4,7 @@ import { ContactPage } from "./pages/ContactPage";
 import { ProductsPage } from "./pages/ProductsPage";
 import { CareerPage } from "./pages/CareerPage";
 import { Portfolio } from "./pages/Portfolio";
+import { AboutUs } from "./pages/AboutUs"
 import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/career" element={<CareerPage />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
       <Analytics />
     </BrowserRouter>
