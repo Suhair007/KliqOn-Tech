@@ -1,35 +1,46 @@
 import { motion } from "motion/react";
 import {
+  TrendingUp,
+  Zap,
   Layers,
-  Cpu,
-  PenTool,
   ShieldCheck,
+  RefreshCcw,
+  UserCheck 
 } from "lucide-react";
 
 
 const reasons = [
   {
-    title: "Product-First Mindset",
-    desc: "We think beyond features. Every solution is designed to deliver real business value and long-term growth.",
+    title: "Business-Driven Development",
+    desc: "We focus on outcomes, not just features. Every build is aligned with your business goals and growth strategy.",
+    icon: TrendingUp,
+  },
+  {
+    title: "Fast & Transparent Execution",
+    desc: "Quick turnarounds with clear communication, realistic timelines, and zero guesswork.",
+    icon: Zap,
+  },
+  {
+    title: "Modern & Scalable Tech Stack",
+    desc: "Built using future-ready technologies and architectures that scale smoothly as your needs grow.",
     icon: Layers,
   },
   {
-    title: "Scalable Architecture",
-    desc: "Built with clean, future-ready systems that scale seamlessly as your business evolves.",
-    icon: Cpu,
-  },
-  {
-    title: "Design with Purpose",
-    desc: "Human-centered UI/UX that balances aesthetics, usability, and performance.",
-    icon: PenTool,
-  },
-  {
-    title: "Transparent Execution",
-    desc: "Clear communication, agile delivery, and full ownership from idea to launch.",
+    title: "Quality-Focused Delivery",
+    desc: "Every release goes through testing, performance checks, and refinements to ensure reliability.",
     icon: ShieldCheck,
   },
+  {
+    title: "Long-Term Partnership",
+    desc: "We provide ongoing support, improvements, and optimization — not one-time handoffs.",
+    icon: RefreshCcw,
+  },
+    {
+    title: "Clear Ownership & Accountability",
+    desc: "We take full responsibility for delivery, timelines, and outcomes, so you always know who owns what.",
+    icon: UserCheck,
+  },
 ];
-
 
 export function WhyKliqOnSection() {
   return (
@@ -46,18 +57,19 @@ export function WhyKliqOnSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
+          className="text-center  mx-auto mb-12 md:mb-16"
         >
           <p className="text-sm uppercase tracking-widest text-blue-400 mb-3">
             Why Choose KliqOn
           </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#F3F3F3]">
-            Built differently. Delivered intelligently.
-          </h2>
+          <p className="text-lg md:text-xl font-medium text-[#F3F3F3] leading-relaxed">
+  We don’t just “deliver projects”, we solve problems with clarity, speed, and accountability. Our approach combines strong engineering, clean UI/UX, and a business-first mindset so every build supports your growth.
+</p>
+
         </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
   {reasons.map((item, index) => {
     const Icon = item.icon;
 

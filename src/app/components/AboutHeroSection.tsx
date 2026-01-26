@@ -1,26 +1,57 @@
 import { motion } from "motion/react";
-import { Code2, Layers, Palette } from "lucide-react";
+
+
+import {
+  Code2,
+  Layers,
+  Palette,
+  ShoppingCart,
+  Gauge,
+  Wrench,
+
+} from "lucide-react";
 
 const services = [
   {
-    title: "Web Development",
-    desc: "Fast, scalable, SEO-optimized websites using modern technologies.",
+    title: "Website Design & Development",
+    desc: "High-performance, responsive websites built for speed, scalability, and conversions.",
     icon: Code2,
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: "/about/provide-1.jfif",
   },
   {
-    title: "Full-Stack Solutions",
-    desc: "Secure APIs, databases, and complete system design.",
+    title: "eCommerce Development",
+    desc: "Shopify and custom eCommerce solutions designed to scale and sell effectively.",
+    icon: ShoppingCart,
+    image: "/about/provide-3.jpg",
+  },
+  {
+    title: "Web Application Development",
+    desc: "Custom dashboards, portals, and SaaS MVPs built with modern architectures.",
     icon: Layers,
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+    image: "/about/provide-2.jfif",
   },
   {
     title: "UI/UX Design",
-    desc: "Intuitive, conversion-focused user experiences.",
+    desc: "Wireframes, prototypes, and design systems focused on usability and conversions.",
     icon: Palette,
-    image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c",
+    image: "/about/provide-3.jfif",
+  },
+  {
+    title: "SEO & Performance Optimization",
+    desc: "SEO-ready builds with performance tuning for faster load times and better rankings.",
+    icon: Gauge,
+    image: "/about/provide-4.jfif",
+  },
+  {
+    title: "Maintenance, Support & Integrations",
+    desc: "Ongoing updates, monitoring, feature enhancements, and third-party integrations including payments, CRM, and APIs.",
+    icon: Wrench,
+    image: "/about/provide-5.jpg",
   },
 ];
+
+
+
 
 export function WhatWeProvideSection() {
   return (
@@ -59,7 +90,7 @@ export function WhatWeProvideSection() {
                 </div>
 
                 {/* Description */}
-                <p>{item.desc}</p>
+                <p className="text-justify">{item.desc}</p>
               </motion.div>
             );
           })}

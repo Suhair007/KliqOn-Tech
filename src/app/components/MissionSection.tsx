@@ -16,9 +16,14 @@ export function MissionSection() {
             <h3 className="text-2xl md:text-3xl font-medium text-white mb-4 md:mb-6">
               Born from innovation,<br />built for impact.
             </h3>
-            <p className="text-[#F3F3F3] text-sm md:text-base">
-              KliqOn Technologies began with a passion for <span className="text-[#0023E8]">solving real-world problems</span> through technology. What started as building better digital experiences evolved into a mission to help startups and businesses turn ideas into scalable, user-focused solutions.
-            </p>
+          <p className="text-[#F3F3F3] text-sm md:text-base text-justify">
+  KliqOn began with a simple belief: businesses deserve technology that is 
+  <span className="text-[#0023E8]"> reliable, scalable, and easy to grow with</span>. 
+  What started as a small team solving practical digital challenges evolved into a focused studio 
+  building clean, conversion-friendly products for brands across industries. 
+  Every project since then has shaped our process — ship fast, build right, and keep improving.
+</p>
+
           </motion.div>
 
           {/* Our Mission */}
@@ -28,10 +33,21 @@ export function MissionSection() {
             viewport={{ once: true }}
             className="bg-[#0023E8]/30 backdrop-blur-lg rounded-3xl p-6 md:p-8 border border-[#0023E8]/40 flex flex-col justify-center"
           >
-            <p className="text-[#F3F3F3] text-xs mb-3 md:mb-4 tracking-widest">OUR MISSION</p>
-            <h3 className="text-2xl md:text-3xl font-medium text-[#F3F3F3]">
-              To create the world's most intuitive and scalable technology.
-            </h3>
+           <p className="text-[#F3F3F3] text-xs mb-3 md:mb-4 tracking-widest">
+  OUR MISSION
+</p>
+<h3 className="text-xl md:text-2xl font-medium text-[#F3F3F3]">
+  To create the world's most intuitive and scalable technology.
+</h3>
+
+<p className="text-[#F3F3F3] text-xs mb-3 md:mb-4 tracking-widest mt-5">
+  OUR VISION
+</p>
+<h3 className="text-xl md:text-2xl font-medium text-[#F3F3F3]">
+  To empower businesses with technology that grows, adapts, and creates lasting impact.
+</h3>
+
+
           </motion.div>
         </div>
       </div>
