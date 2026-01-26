@@ -6,6 +6,10 @@ import {
   ShieldCheck,
   RefreshCcw,
   UserCheck 
+  Layers,
+  Cpu,
+  PenTool,
+  ShieldCheck,
 } from "lucide-react";
 
 
@@ -45,6 +49,31 @@ const reasons = [
 export function WhyKliqOnSection() {
   return (
    <section className="relative mt-10 md:mt-14 pt-6 md:pt-8 pb-12 md:pb-20 bg-gradient-to-b from-transparent to-[#0023E8]/10">
+    title: "Product-First Mindset",
+    desc: "We think beyond features. Every solution is designed to deliver real business value and long-term growth.",
+    icon: Layers,
+  },
+  {
+    title: "Scalable Architecture",
+    desc: "Built with clean, future-ready systems that scale seamlessly as your business evolves.",
+    icon: Cpu,
+  },
+  {
+    title: "Design with Purpose",
+    desc: "Human-centered UI/UX that balances aesthetics, usability, and performance.",
+    icon: PenTool,
+  },
+  {
+    title: "Transparent Execution",
+    desc: "Clear communication, agile delivery, and full ownership from idea to launch.",
+    icon: ShieldCheck,
+  },
+];
+
+
+export function WhyKliqOnSection() {
+  return (
+   <section className="relative mt-5 md:mt-14 pt-6 md:pt-8 pb-12 md:pb-20 from-transparent to-[#0023E8]/10">
 
       
       {/* WRAPPER (full width, controlled padding) */}
@@ -70,6 +99,18 @@ export function WhyKliqOnSection() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
+        >
+          <p className="text-sm uppercase tracking-widest text-[#0023E8] mb-3">
+            Why Choose KliqOn
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#F3F3F3]">
+            Built differently. Delivered intelligently.
+          </h2>
+        </motion.div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
   {reasons.map((item, index) => {
     const Icon = item.icon;
 

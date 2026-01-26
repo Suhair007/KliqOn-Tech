@@ -18,6 +18,7 @@ export const portfolioData: PortfolioItem[] = [
       "Educational institution website designed to provide school information, admissions, and updates with a clean and responsive UI.",
     link: "https://www.vdprasadaraomemorialhighschool.in/",
     image: "/portfolio/vd prasad school.png.png",
+    image: "./portfolio/V.D PRASADA RAO MEMORIAL HIGH SCHOOL.png",
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ export const portfolioData: PortfolioItem[] = [
       "A full-fledged e-commerce platform enabling online product browsing, ordering, and secure checkout.",
     link: "https://thestudiocircle.com/",
     image: "/portfolio/studio circle.png.png",
+    image: "/portfolio/STUDIO CIRCLE.png",
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ export const portfolioData: PortfolioItem[] = [
       "Corporate website developed for a paint brand to showcase products, brand identity, and company information.",
     link: "https://www.aultrapaints.com/",
     image: "/portfolio/aultra paints.png.png",
+    image: "/portfolio/AULTRA PAINTS.png",
   },
   {
     id: 4,
@@ -48,5 +51,6 @@ export const portfolioData: PortfolioItem[] = [
       "Digital presence management including website maintenance and social media handling for a medical institution.",
     link: "https://share.google/VYJIT0GRl4Wi87kXR",
     image: "/portfolio/Hyderabad Urology & Andrology.png.png",
+    image: "/portfolio/HYDERABAD UROLOGY & ANDROLOGY HOSPITAL.png",
   },
 ] as const

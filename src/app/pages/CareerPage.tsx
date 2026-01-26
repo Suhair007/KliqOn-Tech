@@ -36,7 +36,7 @@ export function CareerPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-[#B7B8BC] text-lg md:text-xl max-w-2xl mx-auto mb-12"
+            className="text-[#F3F3F3] text-lg md:text-xl max-w-2xl mx-auto mb-12"
           >
             Be part of a team that's building the future of technology.
           </motion.p>
@@ -109,7 +109,7 @@ export function CareerPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
-              className="text-[#B7B8BC] text-base md:text-lg mb-8 max-w-xl mx-auto relative z-10"
+              className="text-[#F3F3F3] text-base md:text-lg mb-8 max-w-xl mx-auto relative z-10"
             >
               We're expanding our team! Exciting career opportunities will be available soon. Check back regularly for updates on new positions.
             </motion.p>

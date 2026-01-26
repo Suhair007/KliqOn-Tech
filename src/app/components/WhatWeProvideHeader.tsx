@@ -15,6 +15,8 @@ export function WhatWeProvideHeader(){
                 
                   <p className="text-3xl md:text-4xl font-semibold text-[#F3F3F3]">
                    We offer end-to-end digital solutions tailored for startups, SMBs, and growing brands.
+                    We deliver end-to-end digital solutions that combine engineering,
+                    design, and strategy to build scalable products.
                   </p>
                 </motion.div>
     )

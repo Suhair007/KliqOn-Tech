@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 
 
+
 import {
   Code2,
   Layers,
@@ -53,6 +54,30 @@ const services = [
 
 
 
+import { Code2, Layers, Palette } from "lucide-react";
+
+const services = [
+  {
+    title: "Web Development",
+    desc: "Fast, scalable, SEO-optimized websites using modern technologies.",
+    icon: Code2,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+  },
+  {
+    title: "Full-Stack Solutions",
+    desc: "Secure APIs, databases, and complete system design.",
+    icon: Layers,
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+  },
+  {
+    title: "UI/UX Design",
+    desc: "Intuitive, conversion-focused user experiences.",
+    icon: Palette,
+    image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c",
+  },
+];
+
+
 export function WhatWeProvideSection() {
   return (
     <section className="provide-section">
@@ -90,7 +115,11 @@ export function WhatWeProvideSection() {
                 </div>
 
                 {/* Description */}
+
                 <p className="text-justify">{item.desc}</p>
+
+                <p>{item.desc}</p>
+
               </motion.div>
             );
           })}

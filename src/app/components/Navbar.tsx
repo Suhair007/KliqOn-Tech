@@ -34,7 +34,7 @@ export function Navbar() {
     }
   };
 
-  const menuItems = ["Services", "Products", "About Us", "Career", "Portfolio"];
+  const menuItems = ["Products", "About Us", "Career", "Portfolio"];
 
   const handleLogoClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -73,7 +73,9 @@ export function Navbar() {
               const getRoute = (item: string) => {
                 if (item === "Products") return "/products";
                 if (item === "Career") return "/career";
+
                 if (item === "Services") return "#services";
+
                 if (item === "About Us") return "/about-us";
                 if (item === "Portfolio") return "/portfolio";
                 return `#${item.toLowerCase().replace(" ", "-")}`;
@@ -140,7 +142,9 @@ export function Navbar() {
                 const getRoute = (item: string) => {
                   if (item === "Products") return "/products";
                   if (item === "Career") return "/career";
+
                   if (item === "Services") return "#services";
+
                   if (item === "About Us") return "/about-us";
                   if (item === "Portfolio") return "/portfolio";
                   return `#${item.toLowerCase().replace(" ", "-")}`;
