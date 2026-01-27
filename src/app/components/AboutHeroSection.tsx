@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Code2, Layers, Palette } from "lucide-react";
+import { Code2, Layers, Palette, ShoppingCart, Gauge, Wrench} from "lucide-react";
 
 const services = [
   {
@@ -19,6 +19,24 @@ const services = [
     desc: "Intuitive, conversion-focused user experiences.",
     icon: Palette,
     image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c",
+  },
+  {
+    title: "eCommerce Development",
+    desc: "Shopify and custom eCommerce solutions designed to scale and sell effectively.",
+    icon: ShoppingCart,
+    image: "/about/provide-3.jpg",
+  },
+  {
+    title: "SEO & Performance Optimization",
+    desc: "SEO-ready builds with performance tuning for faster load times and better rankings.",
+    icon: Gauge,
+    image: "/about/provide-4.jfif",
+  },
+  {
+    title: "Maintenance, Support & Integrations",
+    desc: "Ongoing updates, monitoring, feature enhancements, and third-party integrations including payments, CRM, and APIs.",
+    icon: Wrench,
+    image: "/about/provide-5.jpg",
   },
 ];
 
