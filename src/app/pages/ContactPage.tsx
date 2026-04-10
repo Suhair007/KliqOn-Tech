@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { useState, useLayoutEffect } from "react";
 import type { FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
@@ -49,8 +50,19 @@ export function ContactPage() {
   };
 
   return (
-    <div className="bg-[#0E1322] min-h-screen font-['Space_Grotesk',sans-serif] overflow-x-hidden">
-      <Navbar />
+    <>
+      <Helmet>
+        <title>Contact KliqOn Technologies - Get In Touch</title>
+        <meta name="description" content="Ready to start your project? Contact KliqOn Technologies today. Let's discuss how we can help bring your ideas to life with our expert development team." />
+        <meta name="keywords" content="contact KliqOn, get quote, software development inquiry, project consultation, contact form, KliqOn Technologies" />
+        <link rel="canonical" href="https://www.kliqontech.com/contact" />
+        <meta property="og:title" content="Contact KliqOn Technologies - Get In Touch" />
+        <meta property="og:description" content="Ready to start your project? Contact KliqOn Technologies today." />
+        <meta property="og:url" content="https://www.kliqontech.com/contact" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      <div className="bg-[#0E1322] min-h-screen font-['Space_Grotesk',sans-serif] overflow-x-hidden">
+        <Navbar />
       
       {/* Hero Section */}
       <section className="relative pt-32 md:pt-40 pb-12 md:pb-20 px-4 overflow-hidden">
@@ -222,7 +234,7 @@ export function ContactPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
+            className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10"
           >
             <div className="bg-[#242f6c]/30 backdrop-blur-lg rounded-2xl p-6 border border-[#B7B8BC]/20 text-center">
               <div className="w-12 h-12 bg-[#0023E8]/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -231,7 +243,7 @@ export function ContactPage() {
                 </svg>
               </div>
               <h3 className="text-[#F3F3F3] font-medium mb-2">Email</h3>
-              <p className="text-[#B7B8BC] text-sm">contact@kliqon.com</p>
+              <p className="text-[#B7B8BC] text-sm">admin@kliqontech.com</p>
             </div>
 
             <div className="bg-[#242f6c]/30 backdrop-blur-lg rounded-2xl p-6 border border-[#B7B8BC]/20 text-center">
@@ -241,25 +253,16 @@ export function ContactPage() {
                 </svg>
               </div>
               <h3 className="text-[#F3F3F3] font-medium mb-2">Phone</h3>
-              <p className="text-[#B7B8BC] text-sm">+91 1234567890</p>
+              <p className="text-[#B7B8BC] text-sm">+91 95056 48039</p>
             </div>
 
-            <div className="bg-[#242f6c]/30 backdrop-blur-lg rounded-2xl p-6 border border-[#B7B8BC]/20 text-center">
-              <div className="w-12 h-12 bg-[#0023E8]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-[#0023E8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h3 className="text-[#F3F3F3] font-medium mb-2">Location</h3>
-              <p className="text-[#B7B8BC] text-sm">Hyderabad, IN</p>
-            </div>
           </motion.div>
         </div>
       </section>
 
       <Footer />
     </div>
+    </>
   );
 }
 

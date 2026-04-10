@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
@@ -12,8 +13,19 @@ export function ProductsPage() {
   }, []);
 
   return (
-    <div className="bg-[#0E1322] min-h-screen font-['Space_Grotesk',sans-serif] overflow-x-hidden">
-      <Navbar />
+    <>
+      <Helmet>
+        <title>Products - KliqOn Technologies Solutions</title>
+        <meta name="description" content="Discover our innovative software products and solutions. KliqOn Technologies offers cutting-edge digital products designed for scalability and performance." />
+        <meta name="keywords" content="software products, digital solutions, technology products, scalable software, KliqOn products" />
+        <link rel="canonical" href="https://www.kliqontech.com/products" />
+        <meta property="og:title" content="Products - KliqOn Technologies Solutions" />
+        <meta property="og:description" content="Discover our innovative software products and solutions." />
+        <meta property="og:url" content="https://www.kliqontech.com/products" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      <div className="bg-[#0E1322] min-h-screen font-['Space_Grotesk',sans-serif] overflow-x-hidden">
+        <Navbar />
       
       {/* Hero Section */}
       <section className="relative pt-32 md:pt-40 pb-12 md:pb-20 px-4 overflow-hidden min-h-[80vh] flex items-center">
@@ -178,6 +190,7 @@ export function ProductsPage() {
 
       <Footer />
     </div>
+    </>
   );
 }
 

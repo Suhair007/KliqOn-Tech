@@ -10,7 +10,7 @@ export function MissionSection() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-[#242f6c]/30 backdrop-blur-lg rounded-3xl p-6 md:p-8 border border-[#B7B8BC]/20"
+            className="bg-[#242f6c]/30 rounded-3xl p-6 md:p-8 border border-[#B7B8BC]/20"
           >
             <p className="text-[#F3F3F3] text-xs mb-3 md:mb-4 tracking-widest">HOW IT STARTED</p>
             <h3 className="text-2xl md:text-3xl font-medium text-white mb-4 md:mb-6">
@@ -26,7 +26,7 @@ export function MissionSection() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-[#0023E8]/30 backdrop-blur-lg rounded-3xl p-6 md:p-8 border border-[#0023E8]/40 flex flex-col justify-center"
+            className="bg-[#0023E8]/30 rounded-3xl p-6 md:p-8 border border-[#0023E8]/40 flex flex-col justify-center"
           >
             <p className="text-[#F3F3F3] text-xs mb-3 md:mb-4 tracking-widest">OUR MISSION</p>
             <h3 className="text-2xl md:text-3xl font-medium text-[#F3F3F3]">

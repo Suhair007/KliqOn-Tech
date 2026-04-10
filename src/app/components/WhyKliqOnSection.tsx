@@ -68,11 +68,10 @@ export function WhyKliqOnSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
         viewport={{ once: true }}
-        whileHover={{ y: -8 }}
         className="relative group rounded-2xl p-[1px] bg-gradient-to-br from-blue-500/40 to-indigo-500/20"
       >
         {/* Glass Card */}
-        <div className="h-full rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 transition-all duration-300 group-hover:bg-white/10">
+        <div className="h-full rounded-2xl bg-white/5 border border-white/10 p-6 transition-all duration-300 group-hover:bg-white/10">
 
           {/* Icon + Title */}
           <div className="flex items-center gap-3 mb-4">

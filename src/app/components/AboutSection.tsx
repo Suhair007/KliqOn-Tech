@@ -90,6 +90,7 @@ export function AboutSection() {
                 src="/about/source.gif"
                 alt="KliqOn team collaboration"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
 
               {/* DARK GRADIENT OVERLAY */}

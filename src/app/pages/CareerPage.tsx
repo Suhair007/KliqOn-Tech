@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
@@ -12,8 +13,19 @@ export function CareerPage() {
   }, []);
 
   return (
-    <div className="bg-[#0E1322] min-h-screen font-['Space_Grotesk',sans-serif] overflow-x-hidden">
-      <Navbar />
+    <>
+      <Helmet>
+        <title>Careers at KliqOn Technologies - Join Our Team</title>
+        <meta name="description" content="Join the KliqOn Technologies team. We're looking for talented developers and innovators to work on cutting-edge digital solutions." />
+        <meta name="keywords" content="careers, jobs, software developer, web developer, mobile developer, join team, KliqOn careers" />
+        <link rel="canonical" href="https://www.kliqontech.com/career" />
+        <meta property="og:title" content="Careers at KliqOn Technologies - Join Our Team" />
+        <meta property="og:description" content="Join the KliqOn Technologies team and work on cutting-edge digital solutions." />
+        <meta property="og:url" content="https://www.kliqontech.com/career" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      <div className="bg-[#0E1322] min-h-screen font-['Space_Grotesk',sans-serif] overflow-x-hidden">
+        <Navbar />
       
       {/* Hero Section */}
       <section className="relative pt-32 md:pt-40 pb-12 md:pb-20 px-4 overflow-hidden min-h-[80vh] flex items-center">
@@ -178,6 +190,7 @@ export function CareerPage() {
 
       <Footer />
     </div>
+    </>
   );
 }
 
